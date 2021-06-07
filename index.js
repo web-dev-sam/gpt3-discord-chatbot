@@ -47,6 +47,22 @@ async function onMessage(msg) {
         return;
     }
 
+    // Show help informations
+    if (message === "!help") {
+        msg.reply(
+            new Discord.MessageEmbed()
+            .setColor("#ff496a")
+            .setDescription("A very simple discord chat bot powered by GPT-3 from OpenAI")
+            .setURL('https://github.com/MindLaborDev/gpt3-discord-chatbot')
+            .addField("**!reset**", "Starts a new conversation")
+            .addField("**!memory**", "Shows current conversation")
+            .setAuthor("GPT-3 Chat Bot", 'https://openai.com/content/images/2019/05/openai-avatar.png', 'https://github.com/MindLaborDev/gpt3-discord-chatbot')
+            .setFooter("Created by MindLabor")
+        );
+        
+        return;
+    }
+
     // Chat with human
     processing = true;
     ai.human(message);
