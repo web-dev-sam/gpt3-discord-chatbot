@@ -1,6 +1,8 @@
+
+![Demo loading...](https://github.com/MindLaborDev/gpt3-discord-chatbot/blob/main/demo/demo.gif?raw=true)
+
 # gpt3-discord-chatbot
 A very simple discord chat bot powered by GPT-3 from [OpenAI](https://openai.com/)
-
 
 ### Quick Start
 1. Run `npm i`
